@@ -1,0 +1,28 @@
+﻿_id,COLUMN NAME,DEFINITION,FORMAT,CODING
+1,ind_id,Indicator identification number,String,369; code for internal use in the Office of Health Equity
+2,ind_definition,Definition of indicator in plain language,String,"Percent of residents within ½ mile of a park, beach, open space, or coastline  "
+3,reportyear,Year(s) that the indicator was reported,String,"2010 population data is from the Decennial Census, U.S. Census Bureau.  2016 parks data is from California Protected Areas Database."
+4,race_eth_code,Numeric code for a race/ethnicity group,String,"1=American Indian or Alaska Native (AIAN), not Latino; 2=Asian, not Latino; 3=Black or African American (AfricanAm), not Latino; 4=Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI), not Latino; 6=White, not Latino;7= Multiple, not Latino; 8=Other, not Latino; 9=Total"
+5,race_eth_name,Name of race/ethnic group,String,"AIAN=American Indian or Alaska Native, not Latino; Asian, not Latino; AfricanAm=African American, not Latino; Latino; NHOPI=Native Hawaiian or Other Pacific Islander, not Latino; White, not Latino; Multiple, not Latino; Other, not Latino; Total"
+6,geotype,Type of geographic unit,String,"CT=Census tract; PL=Place (includes cities, towns, and census designated places -CDP-. It does not include unincorporated communities); CD=County subdivisions; CO=County; RE=region; CA=State"
+7,geotypevalue,Value of geographic unit,String,Census tract code (11-characters in length starting with 06);  place code (5-characters in length); county subdivision code (10-characters length starting with 06); FIPS ID for counties (5-characters in length starting with 06); region id (2-characters in length); state id (2-character in length)
+8,geoname,Name of geographic unit,String,"census tract name, place name, county subdivision name, county name, region name, or state name"
+9,county_name,Name of county that geotype is in,String,Not available for geotypes RE and CA
+10,county_fips,FIPS code of county that geotype is in,String,2-digit census state code (06) plus 3-digit census county code
+11,region_name,Metopolitan Planning Organization (MPO)-based region name: see MPO_Regions Tab,String,Metropolitan Planning Organizations (MPO) regions as reported in the 2010 California Regional Progress Report (http://www.dot.ca.gov/hq/tpp/offices/orip/Collaborative%20Planning/Files/CARegionalProgress_2-1-2011.pdf).
+12,region_code,Metopolitan Planning Organization (MPO)-based region name: see MPO_Regions Tab,String,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+13,strata_one_code,Numeric code for strata one: park type,String,1=City; 2=County; 3=Federal; 4=State; 5=Other; 6=Total
+14,strata_one_name,Strata one: park type,String,"City, County, Federal, State, Other, Total"
+15,strata_two_code,Not available for this dataset,String,
+16,strata_two_name,Not available for this dataset,String,
+17,numerator,"Number of residents within ½ mile of a park, beach, open space, or coastline in the geographic unit",Numeric,
+18,denominator,Total number of residents in the geographic unit,Numeric,
+19,estimate,"Percent of residents within ½ mile of a park, beach, open space, or coastline  ",Floating Point,Blank cells indicate data not reported by the  Census.  Zero (0) indicates no people with a four-year college degree or greater educational attainment.
+20,LL_95CI,"Lower limit of 95% confidence interval around the estimate: The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits.",Floating Point,
+21,UL_95CI,Upper limit of 95% confidence interval.  ,Floating Point,
+22,SE,Standard error of the estimate: measure of the precision of the sample mean.  The standard error falls as the sample size increases. (Reference: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/),Floating Point,
+23,RSE,"Relative standard error (se/estimate * 100) expressed as a percent: provides the rational basis for determining which estimates may be considered “unreliable.” Conforming to National Center for Health Statistics (NCHS) standards, estimates that are calculated from fewer than 20 data elements, the equivalent of an RSE of 23 percent or more, are considered unreliable (http://www.cdph.ca.gov/programs/ohir/Documents/OHIRProfiles2014.pdf).  For this project we consider estimates with RSE ≥ 30% as unreliable.",Floating Point,
+24,CA_decile,"Statewide decile ranking: 'CA_decile' groups places into 10 groups (or deciles) according to the distribution of values of the estimate. Highest estimate values are included in the first decile.  Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records). As a result, all 0 values will be assigned to the 4th decile: the mean between the 1st and 7th deciles.  ",Floating Point,
+25,CA_RR,California Ratio: ratio estimate/state estimate; indicates how many times the local estimate is higher or lower than the state estimate. Values higher than 1 indicate local estimate are higher than state estimates.,Floating Point,
+26,version,Date/time stamp of version of data,Date,mm/DD/CCYY hh:mm:ss
+27,"NOTE: ""NA"" cells indicate data is not available or not applicable.",,,
